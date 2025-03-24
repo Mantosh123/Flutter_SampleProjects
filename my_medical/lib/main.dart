@@ -68,7 +68,11 @@ class _MyHomePageState extends State<HomeScreen> {
         ],
         leading: IconButton(
           onPressed: () {},
-          icon: const Icon(Icons.menu),
+          icon: Image.asset(
+            'assets/images/SmallLogo.png',
+            height: 30,
+            width: 30,
+          ),
         ),
       ),
       body: Center(
