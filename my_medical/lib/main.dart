@@ -19,6 +19,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
       home: const HomeScreen(title: 'Medical Shop'),
+      debugShowCheckedModeBanner: false,
     );
   }
 }
@@ -64,8 +65,10 @@ class _MyHomePageState extends State<HomeScreen> {
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
         actions: <Widget>[
-          IconButton(onPressed: () {}, icon: const Icon(Icons.notifications))
+          IconButton(onPressed: () {}, icon: const Icon(Icons.notifications)),
+          IconButton(onPressed: () {}, icon: const Icon(Icons.shopping_basket))
         ],
+
         leading: IconButton(
           onPressed: () {},
           icon: Image.asset(
