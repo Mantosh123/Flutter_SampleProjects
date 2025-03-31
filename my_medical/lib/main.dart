@@ -113,7 +113,9 @@ class _MyHomePageState extends State<HomeScreen> {
           },
         ),
       ),
-      drawer: Drawer(),
+      drawer: Drawer(
+        child: Text('Drawer Header'),
+      ),
       // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
