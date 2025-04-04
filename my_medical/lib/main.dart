@@ -62,7 +62,8 @@ class _MyHomePageState extends State<HomeScreen> {
           Expanded(
               child: Center(
             child: Text(' Search result will be displayed here'),
-          ))
+            Text(' Search result will be displayed here'),
+          )),
         ],
       ),
       drawer: Drawer(
@@ -90,11 +91,12 @@ class _SearchBarState extends State<SearchBar> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.all(16),
+      padding: EdgeInsets.all(14),
       child: TextField(
         onChanged: onQueryChanged,
         decoration: InputDecoration(
           labelText: 'Search',
+          hoverColor: Colors.orange,
           border: OutlineInputBorder(),
           prefixIcon: Icon(Icons.search),
         ),
