@@ -62,7 +62,6 @@ class _MyHomePageState extends State<HomeScreen> {
           Expanded(
               child: Center(
             child: Text(' Search result will be displayed here'),
-            Text(' Search result will be displayed here'),
           )),
         ],
       ),
