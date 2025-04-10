@@ -59,10 +59,11 @@ class _MyHomePageState extends State<HomeScreen> {
       body: Column(
         children: [
           SearchBar(),
-          Expanded(
-              child: Center(
-            child: Text(' Search result will be displayed here'),
-          )),
+          // TableExample(),
+          // Expanded(
+          //     child: Center(
+          //   child: Text(' Search result will be displayed here'),
+          // )),
         ],
       ),
       drawer: Drawer(
@@ -98,6 +99,39 @@ class _SearchBarState extends State<SearchBar> {
           hoverColor: Colors.orange,
           border: OutlineInputBorder(),
           prefixIcon: Icon(Icons.search),
+        ),
+      ),
+    );
+  }
+}
+
+class TableExample extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Flutter Table View'),
+      ),
+      body: SingleChildScrollView(
+        scrollDirection: Axis.vertical,
+        child: DataTable(
+          columns: const [
+            DataColumn(label: Text('ID')),
+            DataColumn(label: Text('Name')),
+            DataColumn(label: Text('Role')),
+          ],
+          rows: const [
+            DataRow(cells: [
+              DataCell(Text('1')),
+              DataCell(Text('Alice')),
+              DataCell(Text('Engineer')),
+            ]),
+            DataRow(cells: [
+              DataCell(Text('3')),
+              DataCell(Text('Charlie')),
+              DataCell(Text('Manager')),
+            ]),
+          ],
         ),
       ),
     );
