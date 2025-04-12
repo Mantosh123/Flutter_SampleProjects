@@ -110,7 +110,7 @@ class TableExample extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Flutter Table View'),
+        title: Text('Medcine list View'),
       ),
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
@@ -127,7 +127,7 @@ class TableExample extends StatelessWidget {
               DataCell(Text('Engineer')),
             ]),
             DataRow(cells: [
-              DataCell(Text('3')),
+              DataCell(Text('2')),
               DataCell(Text('Charlie')),
               DataCell(Text('Manager')),
             ]),
